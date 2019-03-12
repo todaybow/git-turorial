@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Flask_basic</title>
+        <link href="{{ url_for('static',filename='css/bootstrap-3.3.7.min.css') }} " rel="stylesheet">
+        <link href="{{ url_for('static',filename='css/custom.css') }} " rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            {% include 'includes/_navbar.html' %}
+            {% block body %}{% endblock %}
+        </div>
+
+        <script src="{{ url_for('static',filename='js/jquery-3.2.1.slim.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/bootstrap-3.3.7.min.js') }}"></script>
+    </body>
+</html>
